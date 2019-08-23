@@ -1,0 +1,25 @@
+<section>
+  <div class="container">
+    <div class="form">
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="username" class="control-label col-sm-2">Login</label>
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="username" placeholder="Username" [(ngModel)]="username" name="username" required>
+          </div>      
+        </div>
+        <div class="form-group">
+          <label for="password" class="control-label col-sm-2">Password</label>
+          <div class="col-sm-12">
+          <input type="password" class="form-control" id="password" placeholder="Password" [(ngModel)]="password" name="password" required>
+          </div>
+        </div><br>
+        <div class="form-group align-items-center">
+          <div class="col">
+            <button class="btn btn-block btn-hover color-8" (click)="login()" >Login</button>
+          </div>
+        </div>
+      </form>
+    </div>  
+  </div>
+</section>

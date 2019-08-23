@@ -1,1 +1,13 @@
-<p>todo-list works!</p>
+<section>
+  <div class="container">    
+    <app-input-todo (insertEvent)="reloadItens($event)"></app-input-todo>
+    <div *ngIf="todoList$.length > 0" class="form-group">
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let item of todoList$">
+          <app-todo [todo]="item" (deleteEvent)="deleteItem($event)" (updateEvent)="updateItem($event)"></app-todo>
+        </li>
+      </ul>    
+    </div>
+    <app-add-message *ngIf="todoList$.length == 0"></app-add-message>
+  </div>
+</section>

@@ -1,0 +1,7 @@
+#inputTask {
+  background-color: #343A3F;
+  border-color: rgba(0,0,0,.125);
+  color: white;
+}
+
+#inputTask:focus {}

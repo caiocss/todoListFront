@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   background-color: #3C4249;
+  color: #E1E9F2;
+}
+
+.container {
+  max-width: 500px;
 }

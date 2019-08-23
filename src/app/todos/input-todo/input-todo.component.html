@@ -1,1 +1,5 @@
-<p>input-todo works!</p>
+<div class="form-group">
+  <label for="inputTask"></label>
+  <input type="text" name="inputTask" id="inputTask" class="form-control" placeholder="Add a task..." (keyup.enter)="addTask(inputText)" [(ngModel)]="inputText">
+</div>
+

@@ -1,0 +1,75 @@
+.doneTask {
+  text-decoration: line-through;
+  color: #6E747D;
+}
+
+.custom-control-label:before{
+  border-color: #383E45;
+  background-color: #484F58;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+  background-color: #484F58;
+}
+
+
+.iconbutton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  margin-top: -4%;
+}
+.iconbutton svg {
+  transition: 200ms all;
+}
+
+.iconbutton svg {
+  width: 18px;
+}
+
+.iconbutton.medium svg {
+  width: 35px;
+}
+.iconbutton.medium:after {
+  height: 35px;
+  background-size: 35px 175px;
+}
+.iconbutton.large svg {
+  width: 50px;
+}
+.iconbutton.large:after {
+  height: 50px;
+  background-size: 50px 250px;
+}
+
+svg.delete-animation {
+  fill: #99A0AB;
+}
+
+svg.delete-animation .lid {
+  transform-origin: 2px 5px;
+  transition: 500ms all;
+}
+svg.delete-animation .can {
+  transition: 500ms all;
+}
+svg.delete-animation:hover {
+  fill: #ff2b2b;
+}
+svg.delete-animation:hover .lid {
+  transform: rotate(-30deg);
+}
+svg.delete-animation:active .lid {
+  transform: rotate(-50deg);
+}
+
+/* .delete {
+	width: 30px;
+	height: 30px;
+	
+	background: #F35E61;
+	border-radius: 50%;
+	color: #fff;
+	cursor: pointer;
+} */
